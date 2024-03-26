@@ -1,4 +1,4 @@
-def call() {
+def call(currentBuild) {
     switch (currentBuild.currentResult) {
         case 'SUCCESS':
             return 'green';
