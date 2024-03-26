@@ -1,5 +1,5 @@
-def call(currentBuild) {
-    switch (currentBuild.currentResult) {
+def call(currentResult) {
+    switch (currentResult) {
         case 'SUCCESS':
             return 'green';
         case 'FAILURE':
